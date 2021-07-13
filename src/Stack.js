@@ -11,4 +11,9 @@ class Stack {
   constructor() {
     this.top = null;
   }
+
+  push(value) {
+    this.top = new Node(value, this.top);
+    return this;
+  }
 }
